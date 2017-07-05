@@ -1,0 +1,136 @@
+----------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  C:\Users\jpaluser\Dropbox (JPAL LAC)\Chile Compra Project\Stata resources\balance
+> pscore\Example Head Start_log.log
+  log type:  text
+ opened on:  16 Jan 2017, 18:44:04
+
+. 
+. balancepscore high_mortalityPRE pop534 pctsch534 pctblack pcturban if R>=-`BW' & R<=`BW', co
+> msup numblock(5) namgroup(Low Mortality/High Mortality)
+
+
+
+**************************************************** 
+BLOCK DISTRIBUTION 
+**************************************************** 
+
+              Low Mortal~y  High Morta~y         Total
+     Block 1           101            44           145
+     Block 2            94            52           146
+     Block 3            64            81           145
+     Block 4            35           111           146
+     Block 5            22           123           145
+Total Sample           316           411           727
+
+
+
+**************************************************** 
+BALANCE WITHIN BLOCKS 
+**************************************************** 
+**************************************************** 
+BLOCK 1
+**************************************************** 
+
+              Mean Low M~y  Mean High ~y    StMeanDiff       p-value
+      pop534         7.846         7.988         -.194          .021
+   pctsch534          .561          .541          .409          .033
+    pctblack         7.181         6.343          .039          .717
+    pcturban         2.087             0          .105          .229
+Observations           101            44             .             .
+Abs(StMean~)             .             .          .187             .
+ F-statistic             .             .             .         2.696
+     p-value             .             .             .          .033
+**************************************************** 
+BLOCK 2
+**************************************************** 
+
+              Mean Low M~y  Mean High ~y    StMeanDiff       p-value
+      pop534         8.472         8.414          .079          .213
+   pctsch534          .543          .553         -.191          .242
+    pctblack        18.328        20.015         -.078           .62
+    pcturban         7.098         9.613         -.126          .357
+Observations            94            52             .             .
+Abs(StMean~)             .             .          .119             .
+ F-statistic             .             .             .          .693
+     p-value             .             .             .          .598
+**************************************************** 
+BLOCK 3
+**************************************************** 
+
+              Mean Low M~y  Mean High ~y    StMeanDiff       p-value
+      pop534         8.872          8.81          .084          .182
+   pctsch534          .549          .561         -.229          .199
+    pctblack        21.792        24.849         -.142          .375
+    pcturban        19.889        18.472          .071          .641
+Observations            64            81             .             .
+Abs(StMean~)             .             .          .132             .
+ F-statistic             .             .             .           .75
+     p-value             .             .             .          .559
+**************************************************** 
+BLOCK 4
+**************************************************** 
+
+              Mean Low M~y  Mean High ~y    StMeanDiff       p-value
+      pop534         9.118         9.202         -.114          .102
+   pctsch534          .573          .559          .272          .164
+    pctblack        35.191        30.251          .229          .213
+    pcturban        22.786        27.386         -.231          .161
+Observations            35           111             .             .
+Abs(StMean~)             .             .          .211             .
+ F-statistic             .             .             .         1.549
+     p-value             .             .             .          .191
+**************************************************** 
+BLOCK 5
+**************************************************** 
+
+              Mean Low M~y  Mean High ~y    StMeanDiff       p-value
+      pop534         9.706         9.849         -.196           .16
+   pctsch534           .56          .557          .071          .734
+    pctblack        39.655        38.711          .044          .831
+    pcturban        36.523        33.677          .143          .508
+Observations            22           123             .             .
+Abs(StMean~)             .             .          .113             .
+ F-statistic             .             .             .          .761
+     p-value             .             .             .          .553
+
+
+
+**************************************************** 
+BALANCE IMPROVE 
+**************************************************** 
+**************************************************** 
+ORIGINAL BALANCE 
+**************************************************** 
+
+              Mean Low M~y  Mean High ~y    StMeanDiff       p-value
+      pop534         8.484         9.089         -.809             0
+   pctsch534          .554          .556         -.038          .614
+    pctblack        18.551        27.949         -.434             0
+    pcturban        11.688        22.298         -.533             0
+Observations           324           413             .             .
+Abs(StMean~)             .             .          .454             .
+ F-statistic             .             .             .        39.672
+     p-value             .             .             .             0
+**************************************************** 
+BALANCE AFTER PROPENSITY SCORE 
+**************************************************** 
+
+              Mean Low M~y  Mean High ~y    StMeanDiff       p-value
+      pop534         8.803         8.852         -.068          .018
+   pctsch534          .557          .554          .066          .066
+    pctblack        24.436        24.037          .018          .671
+    pcturban        17.669        17.831         -.008          .498
+Observations           316           411             .             .
+Abs(StMean~)             .             .           .04             .
+ F-statistic             .             .             .          1.28
+     p-value             .             .             .          .184
+
+. 
+. log close 
+      name:  <unnamed>
+       log:  C:\Users\jpaluser\Dropbox (JPAL LAC)\Chile Compra Project\Stata resources\balance
+> pscore\Example Head Start_log.log
+  log type:  text
+ closed on:  16 Jan 2017, 18:44:10
+----------------------------------------------------------------------------------------------

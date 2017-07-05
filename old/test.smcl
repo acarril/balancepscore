@@ -1,0 +1,46 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\Stephan\Dropbox\Chile Compra Project\Stata resources\balancepscore\test.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}16 Jan 2017, 16:14:32
+
+{com}. do "C:\Users\Stephan\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. balancepscore1 treat age education nodegree, comsup numblock(3) 
+
+
+
+{res}**************************************************** 
+BLOCK DISTRIBUTION 
+**************************************************** 
+
+{txt}                 G0     G1  Total
+     Block 1 {res}   154    101    255
+{txt}     Block 2 {res}   145     83    228
+{txt}     Block 3 {res}   126    113    239
+{txt}Total Sample {res}   425    297    722
+{reset}
+
+
+{res}**************************************************** 
+BALANCE WITHIN BLOCKS 
+**************************************************** 
+**************************************************** 
+BLOCK 1
+**************************************************** 
+{err}St:  operator invalid
+{txt}{search r(198):r(198);}
+
+end of do-file
+
+{search r(198):r(198);}
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\Stephan\Dropbox\Chile Compra Project\Stata resources\balancepscore\test.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}16 Jan 2017, 16:14:55
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
